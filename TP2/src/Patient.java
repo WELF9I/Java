@@ -31,7 +31,7 @@ public class Patient {
     }
 
     public void trieOrdonnace() {
-        List<String> sortedOrdonnance = new ArrayList<>(ordonnance);
+        List<String> sortedOrdonnance = new ArrayList<String>(ordonnance);
         Collections.sort(sortedOrdonnance);
         ordonnance = new LinkedHashSet<>(sortedOrdonnance);
         

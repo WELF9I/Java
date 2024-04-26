@@ -24,7 +24,7 @@ public class DossierPharmacie {
         }
         return false;
     }
-
+    
     public void affichePatient(String nom) {
         Patient patient = patients.get(nom.toLowerCase());
         if (patient != null) {
