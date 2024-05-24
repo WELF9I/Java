@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.AjouterReparationController">
+   <children>
+      <Label layoutX="193.0" layoutY="23.0" text="Ajouter Reparation">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="70.0" text="Description de l'appareil : " />
+      <TextField fx:id="deviceDescriptionField" layoutX="193.0" layoutY="65.0" prefHeight="31.0" prefWidth="299.0" />
+
+      <Label layoutX="21.0" layoutY="110.0" text="Marque : " />
+      <TextField fx:id="deviceBrandField" layoutX="193.0" layoutY="105.0" prefHeight="31.0" prefWidth="299.0" />
+
+      <Label layoutX="21.0" layoutY="150.0" text="Client : " />
+      <ComboBox fx:id="clientComboBox" layoutX="193.0" layoutY="145.0" prefHeight="31.0" prefWidth="299.0" />
+
+      <Label layoutX="21.0" layoutY="190.0" text="Catégorie de l'appareil : " />
+      <ComboBox fx:id="categoryComboBox" layoutX="193.0" layoutY="185.0" prefHeight="31.0" prefWidth="299.0" />
+
+      <Label layoutX="21.0" layoutY="230.0" text="Heures de main-d'œuvre : " />
+      <TextField fx:id="labourHoursField" layoutX="193.0" layoutY="225.0" prefHeight="31.0" prefWidth="299.0" />
+
+      <Label layoutX="21.0" layoutY="270.0" text="Pièces détachées : " />
+      <ListView fx:id="partsListView" layoutX="193.0" layoutY="265.0" prefHeight="87.0" prefWidth="299.0" />
+
+      <Button layoutX="196.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleSubmitAction" prefHeight="25.0" prefWidth="99.0" text="Enregistrer" />
+   </children>
+</AnchorPane>

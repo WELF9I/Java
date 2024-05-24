@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="535.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.MainController">
+   <children>
+      <Label layoutX="56.0" layoutY="14.0" text="Bienvenue dans votre atelier de réparation">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="175.0" layoutY="125.0" mnemonicParsing="false" onAction="#handleAjouterReparation" prefHeight="48.0" prefWidth="250.0" text="Ajouter Réparation" />
+      <Button layoutX="175.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleRechercherClient" prefHeight="48.0" prefWidth="250.0" text="Rechercher Client" />
+      <Button layoutX="175.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleAfficherFacture" prefHeight="48.0" prefWidth="250.0" text="Afficher Facture" />
+      <Button layoutX="175.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleAjouterClient" prefHeight="48.0" prefWidth="250.0" text="Ajouter Client" />
+      <Button layoutX="175.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleAjouterCategorie" prefHeight="48.0" prefWidth="250.0" text="Ajouter Categorie" />
+   </children>
+</AnchorPane>

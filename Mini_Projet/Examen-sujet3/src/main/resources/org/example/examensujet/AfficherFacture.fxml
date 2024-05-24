@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.AfficherFactureController">
+   <children>
+      <Label layoutX="230.0" layoutY="20.0" text="Afficher Facture">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <TextField fx:id="searchField" layoutX="268.0" layoutY="80.0" prefHeight="31.0" prefWidth="282.0" promptText="Entrez le nom du propriétaire" />
+      <Button layoutX="247.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleSearchAction" prefHeight="31.0" prefWidth="107.0" text="Rechercher" />
+      <ListView fx:id="deviceListView" layoutX="50.0" layoutY="183.0" prefHeight="150.0" prefWidth="500.0" />
+      <Label fx:id="invoiceDetailsLabel" layoutX="50.0" layoutY="320.0" prefHeight="50.0" prefWidth="500.0" />
+      <Button layoutX="247.0" layoutY="345.0" mnemonicParsing="false" onAction="#handlePrintAction" prefHeight="31.0" prefWidth="107.0" text="Imprimer" />
+      <Label layoutX="50.0" layoutY="88.0" text="Entrez le nom du propriétaire :" />
+   </children>
+</AnchorPane>
